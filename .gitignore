@@ -179,3 +179,24 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+# --- Personal data (ADR-0003): this repo is PUBLIC. Real data lives in JOB_SEARCH_DATA_DIR, outside the repo.
+*.pdf
+*.doc
+*.docx
+*.odt
+*.rtf
+*.pages
+*.xls
+*.xlsx
+*.csv
+data/
+job-search-data/
+.env*
+!.env.example
+# Made-up test data is allowed
+!tests/fixtures/**/
+!tests/fixtures/**
+
+# Local planning notes (process artifacts; not published)
+docs/superpowers/
+.superpowers/
